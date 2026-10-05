@@ -1,8 +1,9 @@
 build:
   hugo_version: '0.162.0'
 deploy:
-  # Deployment target: github-pages, netlify, vercel, cloudflare, or none
-  host: 'github-pages'
+  # GitHub Pages is currently serving the repository root directly.
+  # Keep the Hugo deployment disabled to avoid competing Pages deployments.
+  host: 'none'
 template:
   id: "academic-cv"
   name: "Academic CV"
