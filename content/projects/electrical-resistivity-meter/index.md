@@ -10,6 +10,9 @@ tags:
   - Field Instrumentation
 ---
 
+**Project status:** Design stage — prototype not yet assembled.
+
+
 Development of a portable electrical resistivity instrument aimed at **hydrogeological reconnaissance and well-siting support in crystalline terrain**. The project combines high-voltage current injection, voltage and current measurement, embedded control, local display and field logging.
 
 The design philosophy prioritizes operator safety, measurement traceability, repairability and practical field use. The instrument is intended as an applied engineering platform rather than a black-box device.

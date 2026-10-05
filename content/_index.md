@@ -40,6 +40,7 @@ sections:
     content:
       title: Selected Projects
       text: Applied projects connecting water resources, geospatial analysis, field instrumentation and automation.
+      count: 6
       filters:
         folders:
           - projects

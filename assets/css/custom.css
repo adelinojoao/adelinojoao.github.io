@@ -1,3 +1,4 @@
+/* João Adelino — dark technical portfolio */
 :root {
   --ja-bg: #0b0d10;
   --ja-surface: #11151a;
@@ -98,4 +99,36 @@ footer {
       radial-gradient(circle at 20% 4%, rgba(79,159,196,.09), transparent 22rem),
       linear-gradient(180deg, #0b0d10 0%, #0d1014 55%, #0b0d10 100%);
   }
+}
+
+/* Portfolio refinements: local fonts, charcoal surfaces and compact biography. */
+body, h1, h2, h3, h4, nav, .prose {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+}
+body { line-height: 1.7; }
+h1, h2, h3 { font-weight: 700; }
+#about.hbb-section { padding: 0; }
+#about .resume-biography { padding-top: 5rem; padding-bottom: 5rem; }
+#about .resume-biography > div { max-width: 1160px; }
+#about .avatar { border-color: #252c35; }
+#about h1 { letter-spacing: -.045em; }
+#about p.text-2xl { font-size: 1.25rem; line-height: 1.5; color: #9bcce0; }
+#about p.text-lg { font-size: .95rem; color: #a8b3bf; }
+#about .bio-text { color: #c1cbd5; }
+#about .group { background: #15191e; border: 1px solid #272d35; box-shadow: none; }
+#about .group .flex.gap-4 { display: block; }
+#about .group .flex-shrink-0 { margin-bottom: 1rem; }
+#about .group p.text-xl { font-size: 1rem; line-height: 1.5; }
+#about .group p.text-base { font-size: .875rem; }
+.hbb-section { scroll-margin-top: 5rem; border-bottom: 1px solid #20252b; }
+#projects { background: #101317; }
+#contact { background: #101317; }
+a:focus-visible, button:focus-visible { outline: 2px solid #9bcce0; outline-offset: 4px; }
+@media (max-width: 767px) {
+  #about .resume-biography { padding-top: 2.5rem; padding-bottom: 3rem; }
+  .hbb-section { padding-top: 3rem; padding-bottom: 3rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
 }
