@@ -1,0 +1,101 @@
+:root {
+  --ja-bg: #0b0d10;
+  --ja-surface: #11151a;
+  --ja-surface-2: #161b22;
+  --ja-border: #252c35;
+  --ja-text: #e6edf3;
+  --ja-muted: #9ba6b2;
+  --ja-accent: #4f9fc4;
+  --ja-accent-2: #73b6d3;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--ja-bg);
+}
+
+body {
+  background-color: var(--ja-bg);
+  color: var(--ja-text);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 15% 8%, rgba(79,159,196,.10), transparent 34rem),
+    radial-gradient(circle at 88% 22%, rgba(115,182,211,.055), transparent 30rem),
+    linear-gradient(180deg, #0b0d10 0%, #0d1014 45%, #0b0d10 100%);
+}
+
+header {
+  border-bottom: 1px solid rgba(255,255,255,.055);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+h1, h2, h3 {
+  letter-spacing: -0.025em;
+}
+
+h2 {
+  text-wrap: balance;
+}
+
+.prose {
+  color: #c9d2dc;
+}
+
+.prose strong {
+  color: var(--ja-text);
+}
+
+.prose a {
+  color: var(--ja-accent-2);
+  text-decoration-color: rgba(115,182,211,.35);
+  text-underline-offset: .18em;
+}
+
+.prose a:hover {
+  color: #a2d5e9;
+  text-decoration-color: #a2d5e9;
+}
+
+img[alt*="João Adelino"],
+img[alt*="Joao Adelino"] {
+  box-shadow: 0 0 0 1px rgba(255,255,255,.11), 0 24px 70px rgba(0,0,0,.42);
+}
+
+article {
+  border-color: rgba(255,255,255,.075) !important;
+}
+
+article:hover {
+  border-color: rgba(115,182,211,.22) !important;
+}
+
+button, a {
+  transition: color .18s ease, background-color .18s ease, border-color .18s ease, opacity .18s ease, transform .18s ease;
+}
+
+::selection {
+  background: rgba(79,159,196,.32);
+  color: #fff;
+}
+
+footer {
+  border-top: 1px solid rgba(255,255,255,.055);
+}
+
+@media (max-width: 768px) {
+  body::before {
+    background:
+      radial-gradient(circle at 20% 4%, rgba(79,159,196,.09), transparent 22rem),
+      linear-gradient(180deg, #0b0d10 0%, #0d1014 55%, #0b0d10 100%);
+  }
+}
