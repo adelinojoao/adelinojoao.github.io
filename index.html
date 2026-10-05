@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>João Adelino | Water Resources & Geospatial Technology</title>
+  <meta name="description" content="Technical portfolio of João Adelino — water resources management, watershed governance, GIS, remote sensing, UAVs, hydrogeology and field technology in Brazil's semi-arid region.">
+  <meta name="theme-color" content="#0b0d10">
+  <style>
+    :root{
+      --bg:#0b0d10;--bg2:#0f1318;--panel:#12171d;--panel2:#171d24;
+      --border:#252d36;--text:#e8edf2;--muted:#98a5b3;--accent:#5da8ca;
+      --accent2:#86c4df;--shadow:0 18px 60px rgba(0,0,0,.34);
+      --max:1160px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;background:var(--bg)}
+    body{margin:0;background:
+      radial-gradient(900px 520px at 10% -10%,rgba(93,168,202,.12),transparent 62%),
+      radial-gradient(760px 460px at 92% 7%,rgba(93,168,202,.06),transparent 60%),
+      var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.62;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(var(--max),calc(100% - 40px));margin:0 auto}
+    header{position:sticky;top:0;z-index:20;background:rgba(11,13,16,.78);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.055)}
+    nav{height:68px;display:flex;align-items:center;justify-content:space-between;gap:28px}
+    .brand{font-weight:760;letter-spacing:-.025em;font-size:18px}
+    .brand span{color:var(--accent)}
+    .navlinks{display:flex;align-items:center;gap:27px;color:#b7c1cb;font-size:14px}
+    .navlinks a:hover{color:#fff}
+    .hero{padding:88px 0 72px}
+    .hero-grid{display:grid;grid-template-columns:290px minmax(0,1fr);gap:68px;align-items:center}
+    .portrait-shell{position:relative;width:260px;height:260px}
+    .portrait-shell:before{content:"";position:absolute;inset:-1px;border-radius:50%;background:linear-gradient(145deg,rgba(134,196,223,.7),rgba(255,255,255,.06) 45%,rgba(93,168,202,.25));filter:blur(.2px)}
+    .portrait{position:relative;width:100%;height:100%;object-fit:cover;object-position:50% 36%;border-radius:50%;border:6px solid #101419;box-shadow:0 25px 80px rgba(0,0,0,.46)}
+    .eyebrow{display:inline-flex;gap:9px;align-items:center;font-size:12px;text-transform:uppercase;letter-spacing:.15em;color:var(--accent2);font-weight:750;margin-bottom:15px}
+    .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px rgba(93,168,202,.09)}
+    h1{font-size:clamp(44px,6vw,72px);line-height:1.02;margin:0 0 16px;letter-spacing:-.055em;font-weight:790}
+    .role{font-size:21px;color:#c7d0d9;margin:0 0 9px;font-weight:560}
+    .affil{color:var(--muted);font-size:15px;margin-bottom:25px}
+    .intro{max-width:760px;font-size:17px;color:#b6c0ca;margin:0}
+    .intro strong{color:#eef4f8}
+    .socials{display:flex;gap:11px;margin-top:28px;flex-wrap:wrap}
+    .chip{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border:1px solid var(--border);border-radius:10px;background:rgba(255,255,255,.025);color:#cdd6de;font-size:14px}
+    .chip:hover{border-color:rgba(134,196,223,.4);background:rgba(93,168,202,.08);color:#fff}
+    .chip svg{width:17px;height:17px;fill:currentColor}
+    section{padding:78px 0;border-top:1px solid rgba(255,255,255,.055)}
+    .section-head{display:grid;grid-template-columns:260px minmax(0,1fr);gap:48px;margin-bottom:38px}
+    .kicker{color:var(--accent2);font-size:12px;font-weight:760;text-transform:uppercase;letter-spacing:.14em;margin-bottom:8px}
+    h2{font-size:33px;line-height:1.14;margin:0;letter-spacing:-.035em}
+    .section-copy{color:var(--muted);font-size:16px;max-width:720px;margin:4px 0 0}
+    .manifesto{font-size:22px;line-height:1.55;color:#cbd4dc;max-width:920px;letter-spacing:-.015em}
+    .manifesto strong{color:#fff;font-weight:670}
+    .projects{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.028),rgba(255,255,255,.014));border:1px solid var(--border);border-radius:16px;padding:24px;min-height:235px;display:flex;flex-direction:column;transition:.2s ease}
+    .card:hover{transform:translateY(-3px);border-color:rgba(134,196,223,.36);background:linear-gradient(180deg,rgba(93,168,202,.07),rgba(255,255,255,.015))}
+    .card-num{font:700 11px ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--accent2);letter-spacing:.1em}
+    .card h3{font-size:19px;line-height:1.25;margin:17px 0 10px;letter-spacing:-.02em}
+    .card p{font-size:14px;color:var(--muted);margin:0 0 18px}
+    .tags{margin-top:auto;display:flex;gap:7px;flex-wrap:wrap}
+    .tag{font-size:11px;color:#aeb8c2;border:1px solid rgba(255,255,255,.075);border-radius:999px;padding:4px 8px;background:rgba(255,255,255,.025)}
+    .timeline{position:relative;max-width:920px}
+    .timeline:before{content:"";position:absolute;left:8px;top:9px;bottom:18px;width:1px;background:var(--border)}
+    .job{position:relative;padding:0 0 42px 46px}
+    .job:last-child{padding-bottom:0}
+    .job:before{content:"";position:absolute;left:3px;top:8px;width:11px;height:11px;border-radius:50%;background:var(--bg);border:2px solid var(--accent)}
+    .job-top{display:flex;justify-content:space-between;gap:20px;align-items:baseline}
+    .job h3{font-size:20px;margin:0;letter-spacing:-.02em}
+    .period{white-space:nowrap;color:#758391;font-size:13px}
+    .org{color:var(--accent2);margin:4px 0 10px;font-size:14px}
+    .job p{color:var(--muted);margin:0;max-width:800px}
+    .expert-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .expert{border:1px solid var(--border);border-radius:16px;padding:25px;background:rgba(255,255,255,.018)}
+    .expert h3{margin:0 0 17px;font-size:16px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{padding:8px 10px;border-radius:8px;background:#161c23;border:1px solid #242d36;color:#c1cbd4;font-size:13px}
+    .education{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+    .edu{padding:20px;border-left:2px solid rgba(93,168,202,.55);background:rgba(255,255,255,.018)}
+    .edu strong{display:block;font-size:14px;margin-bottom:5px}
+    .edu span{display:block;color:var(--muted);font-size:13px}
+    .contact-box{border:1px solid var(--border);border-radius:18px;background:linear-gradient(135deg,rgba(93,168,202,.075),rgba(255,255,255,.018) 45%,rgba(255,255,255,.012));padding:34px;display:flex;justify-content:space-between;gap:30px;align-items:center}
+    .contact-box h2{margin-bottom:8px}
+    .contact-box p{margin:0;color:var(--muted);max-width:720px}
+    .contact-actions{display:flex;gap:10px;flex-shrink:0}
+    footer{padding:34px 0 44px;color:#6f7c88;font-size:12px;border-top:1px solid rgba(255,255,255,.055)}
+    footer .wrap{display:flex;justify-content:space-between;gap:20px}
+    @media(max-width:900px){
+      .hero{padding-top:62px}.hero-grid{grid-template-columns:1fr;gap:38px}.portrait-shell{width:210px;height:210px}
+      .section-head{grid-template-columns:1fr;gap:12px}.projects{grid-template-columns:1fr 1fr}.education{grid-template-columns:1fr}
+      .expert-grid{grid-template-columns:1fr}.contact-box{align-items:flex-start;flex-direction:column}
+    }
+    @media(max-width:650px){
+      .wrap{width:min(100% - 28px,var(--max))}.navlinks{display:none}.hero{padding:46px 0 58px}.portrait-shell{width:175px;height:175px}
+      h1{font-size:46px}.role{font-size:18px}.projects{grid-template-columns:1fr}.job-top{display:block}.period{display:block;margin-top:5px}
+      section{padding:58px 0}.contact-actions{width:100%;flex-wrap:wrap}footer .wrap{display:block}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav aria-label="Primary navigation">
+      <a class="brand" href="#top">João <span>Adelino</span></a>
+      <div class="navlinks">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <div class="hero-grid">
+      <div class="portrait-shell">
+        <img class="portrait" src="assets/media/authors/me.jpg" alt="João Adelino">
+      </div>
+      <div>
+        <div class="eyebrow"><span class="dot"></span>Water resources · Geospatial technology</div>
+        <h1>João Adelino</h1>
+        <p class="role">Regional Manager · Water Resources Management</p>
+        <div class="affil">AESA — Paraíba State Water Management Agency · Brazil</div>
+        <p class="intro">I work at the intersection of <strong>water resources management, field operations and applied technology</strong> in Brazil's semi-arid Northeast. My work combines watershed governance, inspection, monitoring, GIS, remote sensing, UAVs and practical technical solutions for decisions that need to hold up in the real world.</p>
+        <div class="socials">
+          <a class="chip" href="https://www.linkedin.com/in/jo%C3%A3o-adelino-09748755/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.86-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.33V8.98h3.42v1.57h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.29zM5.31 7.41a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zm1.78 13.04H3.53V8.98h3.56v11.47z"/></svg>
+            LinkedIn
+          </a>
+          <a class="chip" href="https://github.com/adelinojoao" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .7a11.5 11.5 0 0 0-3.64 22.41c.58.11.79-.25.79-.56v-2.23c-3.23.7-3.91-1.37-3.91-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.78 1.2 1.78 1.2 1.04 1.77 2.72 1.26 3.38.96.1-.75.4-1.26.74-1.55-2.58-.29-5.29-1.29-5.29-5.72 0-1.26.45-2.3 1.2-3.11-.12-.29-.52-1.47.11-3.06 0 0 .98-.31 3.16 1.19a10.9 10.9 0 0 1 5.76 0c2.19-1.5 3.16-1.19 3.16-1.19.63 1.59.23 2.77.11 3.06.75.81 1.2 1.85 1.2 3.11 0 4.45-2.72 5.42-5.31 5.71.42.36.79 1.07.79 2.16v3.21c0 .31.21.68.8.56A11.5 11.5 0 0 0 12 .7z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head">
+        <div><div class="kicker">01 · About</div><h2>Water, territory<br>and technology.</h2></div>
+        <p class="section-copy">Technical decisions in water management are rarely made under laboratory conditions. They happen amid scarcity, competing demands, imperfect data, field constraints and institutional accountability.</p>
+      </div>
+      <div class="manifesto">
+        My approach is to combine <strong>consolidated field practice</strong> with geospatial and digital tools where they genuinely improve the decision. GIS, remote sensing, drones, automation and instrumentation are useful only when they make monitoring more reliable, evidence more defensible, or operations simpler.
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <div class="section-head">
+        <div><div class="kicker">02 · Projects</div><h2>Selected technical work.</h2></div>
+        <p class="section-copy">Applied projects developed around water resources, field instrumentation, geospatial analysis and automation.</p>
+      </div>
+      <div class="projects">
+        <article class="card"><div class="card-num">01 / UAV</div><h3>UAVs for Water Resources Monitoring</h3><p>Field imaging, mapping and visual inspection workflows to support water-use monitoring and technical assessments.</p><div class="tags"><span class="tag">UAV</span><span class="tag">GIS</span><span class="tag">Remote Sensing</span></div></article>
+        <article class="card"><div class="card-num">02 / GEOPHYSICS</div><h3>Field Electrical Resistivity Meter</h3><p>Portable digital resistivity instrument for hydrogeological reconnaissance and well-siting support in crystalline terrain.</p><div class="tags"><span class="tag">Hydrogeology</span><span class="tag">Embedded Systems</span><span class="tag">Field Instrumentation</span></div></article>
+        <article class="card"><div class="card-num">03 / HYDROMETRY</div><h3>Image-Based River Discharge (LSPIV)</h3><p>Non-contact surface-velocity and discharge estimation using camera and UAV imagery, with validation against field measurements.</p><div class="tags"><span class="tag">LSPIV</span><span class="tag">Hydrometry</span><span class="tag">Computer Vision</span></div></article>
+        <article class="card"><div class="card-num">04 / GROUNDWATER</div><h3>Hydrogeological Mapping for Well Siting</h3><p>Integration of geology, terrain, lineaments, drainage and well data to prioritize groundwater targets in crystalline rock.</p><div class="tags"><span class="tag">GIS</span><span class="tag">Groundwater</span><span class="tag">Remote Sensing</span></div></article>
+        <article class="card"><div class="card-num">05 / AUTOMATION</div><h3>DocRADAR — Water Licensing Automation</h3><p>Document-screening workflow using OCR and predefined validation rules to reduce repetitive work without replacing technical judgment.</p><div class="tags"><span class="tag">Python</span><span class="tag">OCR</span><span class="tag">Public Sector</span></div></article>
+        <article class="card"><div class="card-num">06 / TELEMETRY</div><h3>ESP32 + LoRa Field Telemetry</h3><p>Low-cost, long-range telemetry architecture for remote environmental sensing and field instrumentation.</p><div class="tags"><span class="tag">ESP32</span><span class="tag">LoRa</span><span class="tag">IoT</span></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap">
+      <div class="section-head">
+        <div><div class="kicker">03 · Experience</div><h2>Professional trajectory.</h2></div>
+        <p class="section-copy">Technical management with direct exposure to field operations, regulation, water allocation, institutional coordination and conflict situations.</p>
+      </div>
+      <div class="timeline">
+        <div class="job">
+          <div class="job-top"><h3>Regional Manager · Water Resources Management</h3><span class="period">2017 — present</span></div>
+          <div class="org">AESA — Paraíba State Water Management Agency</div>
+          <p>Regional technical and operational management involving water-use inspection and monitoring, technical review of permitting and compliance matters, field assessment of wells, reservoirs and pumping systems, watershed committees, water allocation, conflicts over water use and coordination with municipalities, institutions, users and communities.</p>
+        </div>
+        <div class="job">
+          <div class="job-top"><h3>Technical Sales Trainee</h3><span class="period">2016 — 2017</span></div>
+          <div class="org">Aquatropic</div>
+          <p>Technical support to aquaculture producers, field presentations, production-management recommendations and participation in biofloc-related activities while training for external technical sales.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="expertise">
+    <div class="wrap">
+      <div class="section-head">
+        <div><div class="kicker">04 · Expertise</div><h2>Technical stack.</h2></div>
+        <p class="section-copy">A field-oriented combination of water governance, geospatial analysis and technology.</p>
+      </div>
+      <div class="expert-grid">
+        <div class="expert">
+          <h3>Water & field operations</h3>
+          <div class="skills">
+            <span class="skill">Water Resources Management</span><span class="skill">Watershed Governance</span><span class="skill">Environmental Inspection</span><span class="skill">Water Allocation</span><span class="skill">Conflict Management</span><span class="skill">Technical Reporting</span>
+          </div>
+        </div>
+        <div class="expert">
+          <h3>Geospatial & applied technology</h3>
+          <div class="skills">
+            <span class="skill">GIS</span><span class="skill">Remote Sensing</span><span class="skill">UAV Mapping</span><span class="skill">Python</span><span class="skill">Workflow Automation</span><span class="skill">Embedded Systems</span><span class="skill">Field Instrumentation</span>
+          </div>
+        </div>
+      </div>
+      <div class="education">
+        <div class="edu"><strong>Technology in Aquaculture</strong><span>Universidade Federal do Pampa — UNIPAMPA</span></div>
+        <div class="edu"><strong>Systems Analysis and Development</strong><span>Technology degree</span></div>
+        <div class="edu"><strong>Information Security</strong><span>Postgraduate studies · in progress</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact-box">
+        <div>
+          <div class="kicker">05 · Contact</div>
+          <h2>Technical collaboration.</h2>
+          <p>Interested in applied research, professional exchanges and projects involving water resources, GIS, remote sensing, UAVs, monitoring and field technology.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="chip" href="https://www.linkedin.com/in/jo%C3%A3o-adelino-09748755/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a class="chip" href="https://github.com/adelinojoao" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap"><span>© 2026 João Adelino</span><span>Water resources · Geospatial intelligence · Field technology</span></div>
+</footer>
+</body>
+</html>
