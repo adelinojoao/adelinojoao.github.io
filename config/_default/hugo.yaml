@@ -1,21 +1,16 @@
-# Configuration of Hugo
-# Guide: https://docs.hugoblox.com/tutorial/
-# Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
-
 title: ''
-baseURL: 'https://adelinojoao.github.io/'
-
-defaultContentLanguage: en
+baseURL: https://adelinojoao.github.io/
+defaultContentLanguage: pt
 hasCJKLanguage: false
 defaultContentLanguageInSubdir: false
 removePathAccents: true
-
 cascade:
-  - target:
-      path: /slides/**
-      kind: page
-    outputs: [HTML, present]
-
+- target:
+    path: /slides/**
+    kind: page
+  outputs:
+  - HTML
+  - present
 build:
   writeStats: true
 enableGitInfo: false
@@ -25,11 +20,22 @@ pagination:
 enableEmoji: true
 enableRobotsTXT: true
 footnotereturnlinkcontents: <sup>^</sup>
-ignoreFiles: [".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
+ignoreFiles:
+- .ipynb_checkpoints$
+- \.Rmd$
+- \.Rmarkdown$
+- _cache$
 disableAliases: true
 outputs:
-  home: [HTML, RSS, headers, redirects, backlinks]
-  section: [HTML, RSS]
+  home:
+  - HTML
+  - RSS
+  - headers
+  - redirects
+  - backlinks
+  section:
+  - HTML
+  - RSS
 imaging:
   resampleFilter: lanczos
   quality: 90

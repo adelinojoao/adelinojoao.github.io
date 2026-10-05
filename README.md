@@ -7,8 +7,8 @@ Personal professional portfolio using Hugo Blox Academic CV, with a dark charcoa
 ## Editing
 
 - Profile and experience: `data/authors/me.yaml`
-- Homepage sections: `content/_index.md`
-- Projects: `content/projects/<project>/index.md`
+- Homepage sections: `content/pt/_index.md` and `content/en/_index.md`
+- Projects: `content/pt/projects/<project>/index.md` and `content/en/projects/<project>/index.md`
 - Navigation: `config/_default/menus.yaml`
 - Colors and site metadata: `config/_default/params.yaml`
 - Custom design: `assets/css/custom.css`
@@ -32,3 +32,7 @@ hugo server
 ## Credits
 
 Based on the Hugo Blox Academic CV starter. See `LICENSE.md` for the source template license.
+
+## Languages
+
+Brazilian Portuguese is the default at `/`; English is available at `/en/`. The PT-BR / EN switch links to the same page in the other language. Portuguese profile fields are in `data/pt/authors/me.yaml`; the English profile is in `data/authors/me.yaml`. Language-specific navigation and metadata are in `config/_default/languages.yaml`.

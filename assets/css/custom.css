@@ -132,3 +132,22 @@ a:focus-visible, button:focus-visible { outline: 2px solid #9bcce0; outline-offs
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
 }
+
+/* Two-language switch, kept visible beside the navigation on every screen. */
+.ja-language-switch {
+  display: inline-flex; align-items: center; gap: 3px; padding: 3px;
+  border: 1px solid #303740; border-radius: 999px; background: #11151a;
+  white-space: nowrap; margin-left: .75rem;
+}
+.ja-language-option {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 30px; padding: 3px 12px; border-radius: 999px;
+  color: #aeb9c5; font-size: 12px; font-weight: 700; line-height: 1.25;
+}
+.ja-language-option:hover { color: #fff; background: #252c35; }
+.ja-language-option.is-active { color: #071218; background: #8bc4dd; }
+@media (max-width: 767px) {
+  .ja-language-switch { margin-left: .5rem; }
+  .ja-language-option { font-size: 11px; min-height: 30px; padding: 3px 9px; }
+  .navbar-brand { font-size: 1rem; }
+}

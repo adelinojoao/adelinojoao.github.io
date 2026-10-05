@@ -1,0 +1,16 @@
+- id: home
+  translation: Início
+- id: close
+  translation: Fechar
+- id: languages
+  translation: Idiomas
+- id: authors
+  translation: Autores
+- id: present
+  translation: Atual
+- id: published_with
+  translation: Feito com {hugoblox}.
+- id: read_more
+  translation: Leia mais
+- id: poweredby_button
+  translation: Use este modelo →

@@ -1,0 +1,104 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+name:
+  display: João Adelino
+  given: João
+  family: Adelino
+  alternate: ''
+  pronunciation: ''
+  pronouns: ''
+postnominals: []
+status:
+  icon: ''
+role: Gerente Regional | Gestão de Recursos Hídricos
+bio: 'Atuo na integração entre gestão de recursos hídricos, operações de campo,
+
+  análise geoespacial e tecnologia aplicada no semiárido nordestino.
+
+  Minha atuação reúne coordenação técnica e regulatória, fiscalização,
+
+  monitoramento de usos da água, governança de bacias, gestão de conflitos,
+
+  SIG, sensoriamento remoto, drones e desenvolvimento de soluções práticas
+
+  para o trabalho ambiental.'
+affiliations:
+- name: AESA — Agência Executiva de Gestão das Águas da Paraíba
+  url: https://www.aesa.pb.gov.br/
+links:
+- icon: brands/linkedin
+  url: https://www.linkedin.com/in/jo%C3%A3o-adelino-09748755/
+  label: LinkedIn
+- icon: brands/github
+  url: https://github.com/adelinojoao
+  label: GitHub
+interests:
+- Gestão de Recursos Hídricos
+- Governança de Bacias Hidrográficas
+- SIG e Sensoriamento Remoto
+- Mapeamento com Drones e Monitoramento de Campo
+- Hidrogeologia e Geofísica de Campo
+- Tecnologia Aplicada e Automação
+education:
+- degree: Tecnologia em Aquacultura
+  institution: Universidade Federal do Pampa (UNIPAMPA)
+  end: 2012-12-31
+- degree: Tecnologia em Análise e Desenvolvimento de Sistemas
+  institution: ''
+- degree: Pós-graduação em Segurança da Informação
+  institution: ''
+  summary: Em andamento.
+experience:
+- role: Gerente Regional | Gestão de Recursos Hídricos
+  org: AESA — Agência Executiva de Gestão das Águas da Paraíba
+  start: 2017-05-10
+  summary: 'Gestão técnica e operacional regional voltada aos recursos hídricos da Paraíba.
+
+    Atuação em fiscalização e monitoramento de usos da água, análise técnica de questões de
+
+    regularização e conformidade, vistorias de poços, reservatórios e sistemas de bombeamento,
+
+    comitês de bacia, processos de alocação de água, gestão de conflitos e articulação com
+
+    municípios, instituições públicas, usuários e comunidades. Uso de SIG, sensoriamento remoto
+
+    e drones para apoiar decisões de campo e avaliações técnicas.'
+- role: Trainee de Vendas Técnicas
+  org: Aquatropic
+  start: 2016-01-01
+  end: 2017-04-30
+  summary: 'Apoio técnico a produtores de aquicultura, apresentações em campo, recomendações básicas
+
+    de manejo produtivo e participação em atividades relacionadas a bioflocos, durante a formação
+
+    para atuação em vendas técnicas externas.'
+skills:
+- name: Recursos Hídricos e Operações de Campo
+  items:
+  - label: Gestão de Recursos Hídricos
+    level: 5
+  - label: Fiscalização e Monitoramento Ambiental
+    level: 5
+  - label: Governança de Bacias e Alocação de Água
+    level: 5
+  - label: Relatórios Técnicos e Articulação Institucional
+    level: 5
+- name: Geotecnologias e Tecnologia Aplicada
+  items:
+  - label: SIG e Sensoriamento Remoto
+    level: 4
+  - label: Mapeamento e Imagens com Drones
+    level: 4
+  - label: Python e Automação de Rotinas
+    level: 3
+  - label: Sistemas Embarcados e Instrumentação de Campo
+    level: 3
+languages:
+- name: Português
+  level: 5
+  label: Nativo
+- name: Inglês
+  level: 2
+  label: Em desenvolvimento
+awards: []

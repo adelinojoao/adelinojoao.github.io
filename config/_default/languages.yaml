@@ -1,22 +1,62 @@
-# Languages
-#   Create a section for each of your site's languages.
-#   Documentation: https://docs.hugoblox.com/reference/language/
-
-# Default language
+pt:
+  languageName: Português (Brasil)
+  languageCode: pt-BR
+  locale: pt-br
+  weight: 1
+  contentDir: content/pt
+  menus:
+    main:
+    - name: Sobre
+      url: /#about
+      weight: 10
+    - name: Projetos
+      url: /#projects
+      weight: 20
+    - name: Experiência
+      url: /#experience
+      weight: 30
+    - name: Competências
+      url: /#expertise
+      weight: 40
+    - name: Contato
+      url: /#contact
+      weight: 50
+  params:
+    hugoblox:
+      identity:
+        tagline: Gestão de recursos hídricos · SIG · Sensoriamento remoto · Tecnologia de campo
+        description: 'Portfólio profissional de João Adelino: gestão de recursos hídricos, governança
+          de bacias, SIG, sensoriamento remoto, drones e tecnologia aplicada no semiárido brasileiro.'
+      seo:
+        title: João Adelino | Recursos Hídricos e Geotecnologias
+      footer:
+        text: Recursos hídricos · Inteligência geoespacial · Tecnologia de campo
+      copyright:
+        notice: © {year} {name}. Todos os direitos reservados.
+      locale:
+        date_format: 2 Jan 2006
+        time_format: '15:04'
+        address_format: pt-br
 en:
+  languageName: English
+  languageCode: en-US
   locale: en-us
-  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
-  #contentDir: content/en
-
-# Uncomment the lines below to configure your website in a second language.
-#zh:
-#  locale: zh-Hans
-#  contentDir: content/zh
-#  title: Chinese website title...
-#  params:
-#    description: Site description in Chinese...
-#  menu:
-#    main:
-#      - name: 传
-#        url: '#about'
-#        weight: 1
+  weight: 2
+  contentDir: content/en
+  menus:
+    main:
+    - name: About
+      url: /#about
+      weight: 10
+    - name: Projects
+      url: /#projects
+      weight: 20
+    - name: Experience
+      url: /#experience
+      weight: 30
+    - name: Expertise
+      url: /#expertise
+      weight: 40
+    - name: Contact
+      url: /#contact
+      weight: 50

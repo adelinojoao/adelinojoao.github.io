@@ -1,0 +1,12 @@
+{{- $page := .page -}}
+{{- if $page.IsTranslated -}}
+<div class="ja-language-switch" role="group" aria-label="{{ if eq $page.Lang "pt" }}Idioma do site{{ else }}Website language{{ end }}">
+  {{- range $page.AllTranslations -}}
+  {{- $active := eq .Lang $page.Lang -}}
+  <a href="{{ .RelPermalink }}" hreflang="{{ .Language.LanguageCode }}" lang="{{ .Language.LanguageCode }}"
+     class="ja-language-option{{ if $active }} is-active{{ end }}"{{ if $active }} aria-current="page"{{ end }}
+     aria-label="{{ if eq .Lang "pt" }}Português (Brasil){{ else }}English{{ end }}"
+     title="{{ if eq .Lang "pt" }}Português (Brasil){{ else }}English{{ end }}">{{ if eq .Lang "pt" }}PT-BR{{ else }}EN{{ end }}</a>
+  {{- end -}}
+</div>
+{{- end -}}
